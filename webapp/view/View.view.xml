@@ -4,9 +4,9 @@
     xmlns:tnt="sap.tnt">
     <Shell id="shell">
         <App id="app">
-        
+
             <pages>
-            
+
                 <Page id="page" title="{i18n>title}" showHeader="false">
                     <tnt:ToolHeader>
                         <Button icon="sap-icon://home" type="Transparent">
@@ -19,7 +19,7 @@
                                 <OverflowToolbarLayoutData priority="NeverOverflow" shrinkable="true" />
                             </layoutData>
                             <items>
-                                <IconTabFilter text="ABAP Explored" />
+                                <IconTabFilter text="ABAP-UI5 Explored" />
                                 <IconTabFilter text="Blogs" />
                                 <IconTabFilter text="My Work" />
                             </items>
@@ -45,11 +45,13 @@
                         </MenuButton>
                     </tnt:ToolHeader>
                     <content>
-                        <Carousel class="sapUiContentPadding" loop="true">
-                            <Image src="model/bau.png" class="sapUiLargeMarginTop sapUiLargeMarginBottom" alt="Example picture of spotlight" />
-                            <Image src="https://images.freeimages.com/images/large-previews/3d7/road-sign-1144301.jpg" class="sapUiLargeMarginTop sapUiLargeMarginBottom" alt="Example picture of USB flash drive" />
-                            <Image src="https://images.freeimages.com/images/large-previews/97c/bus-1144059.jpg" class="sapUiLargeMarginTop sapUiLargeMarginBottom" alt="Example picture of spotlight" />
-                        </Carousel>
+                        <FlexBox height="100px" alignItems="Start" justifyContent="Center">
+                            <Carousel class="sapUiContentPadding" loop="true">
+                                <Image src="model/bau.png" alt="Example picture of spotlight" />
+                                <Image src="https://images.freeimages.com/images/large-previews/3d7/road-sign-1144301.jpg" class="sapUiLargeMarginTop sapUiLargeMarginBottom" alt="Example picture of USB flash drive" />
+                                <Image src="https://images.freeimages.com/images/large-previews/97c/bus-1144059.jpg" class="sapUiLargeMarginTop sapUiLargeMarginBottom" alt="Example picture of spotlight" />
+                            </Carousel>
+                        </FlexBox>
 
                     </content>
                     <footer>
