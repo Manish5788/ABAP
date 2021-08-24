@@ -2,7 +2,7 @@
 	"pages": [
 		{
 			"pageId": "employeePageId",
-			"header": "Employee Info",
+			"header": "My Info",
 			"icon": "model/Manish.png",
 			"displayShape": "Circle",
 			"title": "Manish Kumar Rajak",
