@@ -7,7 +7,7 @@
         
             <pages>
             
-                <Page id="page" title="{i18n>title}">
+                <Page id="page" title="{i18n>title}" showHeader="false">
                     <tnt:ToolHeader>
                         <Button icon="sap-icon://home" type="Transparent">
                             <layoutData>
