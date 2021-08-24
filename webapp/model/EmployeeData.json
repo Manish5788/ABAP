@@ -6,7 +6,8 @@
 			"icon": "model/Manish.png",
 			"displayShape": "Circle",
 			"title": "Manish Kumar Rajak",
-			"description": "Lead Analyst",
+            "description": "Lead Analyst",
+            "link":"https://www.linkedin.com/in/manish-kumar-9841b154/",
 			"groups": [
 				{
 					"heading": "Contact Details",

@@ -1,4 +1,5 @@
 sap.ui.define([
+    "sap/m/library",
     "sap/ui/core/mvc/Controller",
     "sap/m/MessageBox",
     "sap/m/MessageToast",
@@ -14,8 +15,10 @@ sap.ui.define([
 	/**
 	 * @param {typeof sap.ui.core.mvc.Controller} Controller
 	 */
-    function (Controller, MessageBox, MessageToast, JSONModel, Fragment, ValueState, Dialog, DialogType, Button, ButtonType, Text) {
+    function (mobileLibrary, Controller, MessageBox, MessageToast, JSONModel, Fragment, ValueState, Dialog, DialogType, Button, ButtonType, Text) {
         "use strict";
+
+        var URLHelper = mobileLibrary.URLHelper;
 
         return Controller.extend("pro.proj.controller.View", {
             onInit: function () {
@@ -54,6 +57,12 @@ sap.ui.define([
             },
             onNavigate: function (oEvent) {
                 MessageToast.show("E-Mail has been sent");
+            },
+            handleUrlPress: function (evt) {
+                URLHelper.redirect("https://www.linkedin.com/in/manish-kumar-9841b154/", true);
+            },
+            onPresstweet: function (evt) {
+                URLHelper.redirect("https://twitter.com/ManishK96274931", true);
             }
 
         });

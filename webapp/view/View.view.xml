@@ -46,17 +46,21 @@
                     </tnt:ToolHeader>
                     <content>
                         <!-- <FlexBox height="100px" alignItems="Start" justifyContent="Center"> -->
-                            <Carousel class="sapUiContentPadding">
-                                <Image src="https://images.freeimages.com/images/large-previews/3d7/road-sign-1144301.jpg" class="sapUiTinyMarginTop sapUiLargeMarginBottom" alt="Example picture of USB flash drive" />
-                                <Image src="https://images.freeimages.com/images/large-previews/97c/bus-1144059.jpg" class="sapUiTinyMarginTop sapUiLargeMarginBottom" alt="Example picture of spotlight" />
-                            </Carousel>
+                        <Carousel class="sapUiContentPadding">
+                            <Image src="https://images.freeimages.com/images/large-previews/3d7/road-sign-1144301.jpg" class="sapUiTinyMarginTop sapUiLargeMarginBottom" alt="Example picture of USB flash drive" />
+                            <Image src="https://images.freeimages.com/images/large-previews/97c/bus-1144059.jpg" class="sapUiTinyMarginTop sapUiLargeMarginBottom" alt="Example picture of spotlight" />
+                        </Carousel>
                         <!-- </FlexBox> -->
 
                     </content>
                     <footer>
                         <Toolbar>
                             <ToolbarSpacer/>
+                            <!-- Icons made by <a href="https://www.freepik.com -->
+                            <Button icon="model/linkedin.png" type="Transparent"  press="handleUrlPress" ariaLabelledBy="editButtonLabel"/>
                             <Button id="employeeQuickView" text="Contact Me" press=".handleQuickViewPress" icon="sap-icon://action" />
+                            <Button icon="model/twitter.png" type="Transparent" press="onPresstweet" ariaLabelledBy="editButtonLabel"/>
+
                             <ToolbarSpacer/>
                         </Toolbar>
                     </footer>
