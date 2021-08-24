@@ -5,26 +5,26 @@
 			"header": "Employee Info",
 			"icon": "model/Manish.png",
 			"displayShape": "Circle",
-			"title": "Michael Muller",
-			"description": "Account Manager",
+			"title": "Manish Kumar Rajak",
+			"description": "Lead Analyst",
 			"groups": [
 				{
 					"heading": "Contact Details",
 					"elements": [
 						{
 							"label": "Mobile",
-							"value": "+001 6101 34869-0",
+							"value": "+91 9975 14317-9",
 							"elementType": "mobile"
 						},
 						{
 							"label": "Phone",
-							"value": "+001 6101 34869-1",
+							"value": "+91 9110 20807-0",
 							"elementType": "phone"
 						},
 						{
 							"label": "Email",
-							"value": "main.contact@company.com",
-							"emailSubject": "Subject",
+							"value": "manish.rajak@cgi.com",
+							"emailSubject": "Love to Work with you!",
 							"elementType": "email"
 						}
 					]
@@ -34,13 +34,13 @@
 					"elements": [
 						{
 							"label": "Name",
-							"value": "Adventure Company",
-							"url": "http://sap.com",
+							"value": "CGI Inc",
+							"url": "http://cgi.com",
 							"elementType": "link"
 						},
 						{
 							"label": "Address",
-							"value": "Main Street 4572, Los Angeles USA"
+							"value": "TPLA Yumlur , Bangaluru IN"
 						}
 					]
 				}

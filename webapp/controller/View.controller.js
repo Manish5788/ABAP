@@ -20,6 +20,8 @@ sap.ui.define([
         return Controller.extend("pro.proj.controller.View", {
             onInit: function () {
 
+
+
             },
 
             handlePopoverPress: function (oEvent) {
@@ -28,29 +30,30 @@ sap.ui.define([
             },
             handleQuickViewPress: function (oEvent) {
 
-                if (!this.oDefaultMessageDialog) {
-                    this.oDefaultMessageDialog = new Dialog({
-                        type: DialogType.Message,
-                        title: "Contact Details",
-                        content: new Text({ text: "Hello There , This is Manish" }),
-                       
-                        beginButton: new Button({
-                            type: ButtonType.Emphasized,
-                            text: "OK",
-                            press: function () {
-                                this.oDefaultMessageDialog.close();
-                            }.bind(this)
-                        }),
-                        endButton: new Button({
-                            text: "Cancel",
-                            press: function () {
-                                this.oDefaultMessageDialog.close();
-                            }.bind(this)
-                        })
+                // set explored app's demo model on this sample
+                var oModel = new JSONModel("model/EmployeeData.json");
+                this.getView().setModel(oModel, "model");
+
+                var oButton = oEvent.getSource(),
+                    oView = this.getView();
+
+                if (!this._pQuickView) {
+                    this._pQuickView = Fragment.load({
+                        id: oView.getId(),
+                        name: "pro.proj.view.HelloDialog",
+                        controller: this
+                    }).then(function (oQuickView) {
+                        oView.addDependent(oQuickView);
+                        return oQuickView;
                     });
                 }
-                this.oDefaultMessageDialog.open();
-
+                this._pQuickView.then(function (oQuickView) {
+                    oQuickView.setModel(oModel);
+                    oQuickView.openBy(oButton);
+                });
+            },
+            onNavigate: function (oEvent) {
+                MessageToast.show("E-Mail has been sent");
             }
 
         });

@@ -4,7 +4,9 @@
     xmlns:tnt="sap.tnt">
     <Shell id="shell">
         <App id="app">
+        
             <pages>
+            
                 <Page id="page" title="{i18n>title}">
                     <tnt:ToolHeader>
                         <Button icon="sap-icon://home" type="Transparent">
@@ -43,8 +45,6 @@
                         </MenuButton>
                     </tnt:ToolHeader>
                     <content>
-
-                        <Button id="BadgedButton" class="sapUiTinyMarginBeginEnd" press="handlePopoverPress" icon="sap-icon://accept" type="Default" text="Netlify"></Button>
                         <Carousel class="sapUiContentPadding" loop="true">
                             <Image src="model/bau.png" class="sapUiLargeMarginTop sapUiLargeMarginBottom" alt="Example picture of spotlight" />
                             <Image src="https://images.freeimages.com/images/large-previews/3d7/road-sign-1144301.jpg" class="sapUiLargeMarginTop sapUiLargeMarginBottom" alt="Example picture of USB flash drive" />
@@ -53,11 +53,11 @@
 
                     </content>
                     <footer>
-                        <OverflowToolbar>
+                        <Toolbar>
                             <ToolbarSpacer/>
-                            <Button id="employeeQuickView" text="Contact" press=".handleQuickViewPress" />
+                            <Button id="employeeQuickView" text="Contact Me" press=".handleQuickViewPress" />
                             <ToolbarSpacer/>
-                        </OverflowToolbar>
+                        </Toolbar>
                     </footer>
                 </Page>
             </pages>
