@@ -46,9 +46,9 @@
 
                         <Button id="BadgedButton" class="sapUiTinyMarginBeginEnd" press="handlePopoverPress" icon="sap-icon://accept" type="Default" text="Netlify"></Button>
                         <Carousel class="sapUiContentPadding" loop="true">
-                            <Image src="model/bau.png" class="sapUiTinyMarginBeginEnd" alt="Example picture of spotlight" />
+                            <Image src="model/bau.png" class="sapUiLargeMarginTop sapUiTinyMarginBeginEnd" alt="Example picture of spotlight" />
                             <Image src="https://images.freeimages.com/images/large-previews/3d7/road-sign-1144301.jpg" class="sapUiLargeMarginTop sapUiLargeMarginBottom" alt="Example picture of USB flash drive" />
-                            <Image src="https://images.freeimages.com/images/large-previews/97c/bus-1144059.jpg" class="sapUiTinyMarginBeginEnd" alt="Example picture of spotlight" />
+                            <Image src="https://images.freeimages.com/images/large-previews/97c/bus-1144059.jpg" class="sapUiLargeMarginTop sapUiTinyMarginBeginEnd" alt="Example picture of spotlight" />
                         </Carousel>
 
                     </content>
