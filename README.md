@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Application Details
 |               |
 | ------------- |
@@ -32,3 +33,7 @@ A Fiori application.
 1. Active NodeJS LTS (Long Term Support) version and associated supported NPM version.  (See https://nodejs.org)
 
 
+=======
+# ABAP
+ABAP Submission 
+>>>>>>> 8af4e64ffd2e95ab9e523429814a677530f15d4c
