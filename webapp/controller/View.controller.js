@@ -63,6 +63,26 @@ sap.ui.define([
             },
             onPresstweet: function (evt) {
                 URLHelper.redirect("https://twitter.com/ManishK96274931", true);
+            },
+            handleCommentPress: function (oEvent) {
+
+                var oButton = oEvent.getSource(),
+                    oView = this.getView();
+
+                if (!this._pComView) {
+                    this._pComView = Fragment.load({
+                        id: oView.getId(),
+                        name: "pro.proj.view.Comment",
+                        controller: this
+                    }).then(function (oCommView) {
+                        oView.addDependent(oCommView);
+                        return oCommView;
+                    });
+                }
+                this._pComView.then(function (oCommView) {
+                    oCommView.openBy(oButton);
+                });
+
             }
 
         });

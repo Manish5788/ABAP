@@ -29,7 +29,7 @@
                                 <OverflowToolbarLayoutData priority="NeverOverflow" />
                             </layoutData>
                         </Button>
-                        <Button icon="sap-icon://comment" type="Transparent">
+                        <Button icon="sap-icon://comment" type="Transparent" press="handleCommentPress">
                             <layoutData>
                                 <OverflowToolbarLayoutData priority="NeverOverflow" />
                             </layoutData>

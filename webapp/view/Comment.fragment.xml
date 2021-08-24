@@ -1,0 +1,20 @@
+<core:FragmentDefinition xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+    xmlns:mvc="sap.ui.core.mvc">
+
+    <l:VerticalLayout class="sapUiContentPadding" width="100%">
+        <Label text="Name" labelFor="nameInput" />
+        <Input id="nameInput" placeholder="Enter Your Name" />
+
+        <Label text="Email" labelFor="emailInput" />
+        <Input id="emailInput" type="Email" placeholder="Enter Your Email" />
+
+        <Label text="Phone" labelFor="phoneInput" />
+        <Input id="phoneInput" type="Tel" placeholder="Enter Your Phone" />
+
+        <Label text="Comment" />
+        <TextArea value="Lorem ipsum dolor st amet" growing="true" width="50%"/>
+    </l:VerticalLayout>
+
+</core:FragmentDefinition>

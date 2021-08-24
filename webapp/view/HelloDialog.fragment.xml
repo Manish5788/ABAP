@@ -1,7 +1,7 @@
 <core:FragmentDefinition
 	xmlns="sap.m"
 	xmlns:core="sap.ui.core">
-	<QuickView
+	<QuickViewa
 		id="quickView"
 		pages="{
 			path: '/pages',
