@@ -42,7 +42,26 @@
 							"label": "Address",
 							"value": "TPLA Yumlur , Bangaluru IN"
 						}
-					]
+                    ]
+                    
+                },
+                		{
+					"heading": "Social Media",
+					"elements": [
+						{
+							"label": "LinkedIn ",
+							"value": "LinkedIn ",
+							"url": "https://www.linkedin.com/in/manish-kumar-9841b154/",
+							"elementType": "link"
+						},
+						{
+							"label": "Twitter ",
+							"value": "Twitter ",
+							"url": "https://twitter.com/ManishK96274931",
+							"elementType": "link"
+						}
+                    ]
+                    
 				}
 			]
 		}
