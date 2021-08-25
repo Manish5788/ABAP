@@ -34,7 +34,12 @@
                                 <OverflowToolbarLayoutData priority="NeverOverflow" />
                             </layoutData>
                         </Button>
-                        <MenuButton icon="sap-icon://hint" type="Transparent">
+                           <Button icon="sap-icon://hint" type="Transparent" press="handleHintPress">
+                            <layoutData>
+                                <OverflowToolbarLayoutData priority="NeverOverflow" />
+                            </layoutData>
+                        </Button>
+                        <!-- <MenuButton icon="sap-icon://hint" type="Transparent">
                             <layoutData>
                                 <OverflowToolbarLayoutData priority="NeverOverflow" />
                             </layoutData>
@@ -42,13 +47,13 @@
                                 <MenuItem text="Edit" icon="sap-icon://edit" />
                                 <MenuItem text="Save" icon="sap-icon://save" />
                             </Menu>
-                        </MenuButton>
+                        </MenuButton> -->
                     </tnt:ToolHeader>
                     <content>
-                        <!-- <FlexBox height="100px" alignItems="Start" justifyContent="Center"> -->
+                        <!-- <FlexBox height="50px" alignItems="Start" justifyContent="Center"> -->
                         <Carousel class="sapUiContentPadding">
-                            <Image src="https://images.freeimages.com/images/large-previews/3d7/road-sign-1144301.jpg" class="sapUiTinyMarginTop sapUiLargeMarginBottom" alt="Example picture of USB flash drive" />
-                            <Image src="https://images.freeimages.com/images/large-previews/97c/bus-1144059.jpg" class="sapUiTinyMarginTop sapUiLargeMarginBottom" alt="Example picture of spotlight" />
+                            <Image src="model/abap.png" class="sapUiTinyMarginTop sapUiLargeMarginBottom" alt="Example picture of USB flash drive" />
+                            <Image src="https://images.freeimages.com/images/large-previews/3d7/road-sign-1144301.jpg" class="sapUiTinyMarginTop sapUiLargeMarginBottom" alt="Example picture of spotlight" />
                         </Carousel>
                         <!-- </FlexBox> -->
 
