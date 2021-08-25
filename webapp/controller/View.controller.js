@@ -80,7 +80,7 @@ sap.ui.define([
                     });
                 }
                 this._pComView.then(function (oCommView) {
-                    oCommView.openBy(oButton);
+                    oCommView.openBy();
                 });
 
             }
