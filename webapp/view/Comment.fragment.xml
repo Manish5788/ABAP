@@ -20,7 +20,7 @@
         </l:VerticalLayout>
         <l:HorizontalLayout class="sapUiContentPadding">
 
-            <Button text="Submit" press="handleOpenDialog" />
+            <Button text="Submit" press="handleOpenDialog" type="Emphasized" />
             <Button text="Close" press="handleCloseDialog" />
 
         </l:HorizontalLayout>
