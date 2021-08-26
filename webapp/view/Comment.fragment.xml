@@ -6,26 +6,28 @@
 
         <l:VerticalLayout class="sapUiContentPadding" width="100%">
             <Label text="Name" labelFor="nameInput" />
-            <Input id="nameInput" placeholder="Enter Your Name" width="70%" />
+            <Input id="nameInput" placeholder="Enter Your Name" width="80%" />
 
             <Label text="Email" labelFor="emailInput" required="true" />
-            <Input id="emailInput" type="Email" placeholder="Enter Your Email" width="70%" />
+            <Input id="emailInput" type="Email" placeholder="Enter Your Email" width="80%" />
 
             <Label text="Phone" labelFor="phoneInput" />
-            <Input id="phoneInput" type="Tel" placeholder="Enter Your Phone" width="70%"/>
+            <Input id="phoneInput" type="Tel" placeholder="Enter Your Phone" width="80%"/>
 
             <Label text="Comment" />
-            <TextArea value="Lorem ipsum dolor" growing="true" width="100%" height="200%"/>
+            <TextArea value="Lorem ipsum dolor" growing="true" width="100%" height="400%"/>
 
         </l:VerticalLayout>
-			<FlexBox
-				height="100px"
-				alignItems="Start"
-				justifyContent="End">
-				<Button text="Submit" type="Emphasized" class="sapUiSmallMarginEnd" press="handleOpenDialog" />
-				<Button text="Close" type="Reject" class="sapUiSmallMarginEnd" press="handleCloseDialog" />
-				<!-- <Button text="3" type="Accept" /> -->
-			</FlexBox>
+        <FlexBox height="100px" alignItems="Start" justifyContent="End">
+            <Button text="Submit" type="Emphasized" class="sapUiSmallMarginEnd" press="handleOpenDialog" />
+            <Button text="Close" type="Reject" class="sapUiSmallMarginEnd" press="handleCloseDialog" />
+            <!-- <Button text="3" type="Accept" /> -->
+        </FlexBox>
+        <!-- <FlexBox height="20px" alignItems="Start" justifyContent="Center">
+            <MessageStrip type="Warning" text="Note: The multi line overflow" />
+
+        </FlexBox> -->
+
 
     </Dialog>
 
