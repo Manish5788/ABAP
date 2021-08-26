@@ -16,9 +16,10 @@
 
             <Label text="Comment" />
             <TextArea value="Lorem ipsum dolor jhfhgfjhgfhgfhgfh" growing="true" width="100%"/>
+            <Button text="Submit" press="handleOpenDialog" />
+            <Button text="Close" press="handleCloseDialog" />
         </l:VerticalLayout>
-        <Button text="Submit" press="handleOpenDialog" />
-        <Button text="Close" press="handleCloseDialog" />
+
     </Dialog>
 
 </core:FragmentDefinition>
