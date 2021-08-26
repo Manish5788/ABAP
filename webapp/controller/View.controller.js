@@ -88,14 +88,18 @@ sap.ui.define([
             handleOpenDialog: function () {
 
                 if (this._pDialog) {
-                    this._pDialog.close();
+                    this._pDialog.then(function (oFrag) {
+                        oFrag.close();
+                    });
                 };
 
             },
-            handleOpenDialog: function () {
+            handleCloseDialog: function () {
 
                 if (this._pDialog) {
-                    this._pDialog.close();
+                    this._pDialog.then(function (oFrag) {
+                        oFrag.close();
+                    });
                 };
 
             }
