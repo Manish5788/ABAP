@@ -81,7 +81,7 @@ sap.ui.define([
                 }
 
                 this._pDialog.then(function (oDialog) {
-                    oDialog.open();
+                    oDialog.openBy(oButton);;
                 }.bind(this));
 
             },
