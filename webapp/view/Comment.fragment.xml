@@ -18,12 +18,14 @@
             <TextArea value="Lorem ipsum dolor" growing="true" width="100%" height="200%"/>
 
         </l:VerticalLayout>
-        <l:HorizontalLayout class="sapUiContentPadding">
-
-            <Button text="Submit" press="handleOpenDialog" type="Emphasized" />
-            <Button text="Close" press="handleCloseDialog" />
-
-        </l:HorizontalLayout>
+			<FlexBox
+				height="100px"
+				alignItems="Start"
+				justifyContent="End">
+				<Button text="Submit" type="Emphasized" class="sapUiSmallMarginEnd" press="handleOpenDialog" />
+				<Button text="Close" type="Reject" class="sapUiSmallMarginEnd" press="handleCloseDialog" />
+				<!-- <Button text="3" type="Accept" /> -->
+			</FlexBox>
 
     </Dialog>
 
