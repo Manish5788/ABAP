@@ -66,7 +66,7 @@ sap.ui.define([
             },
             handleCommentPress: function (oEvent) {
 
-                var oButton = oEvent.getSource(),
+                var oButton1 = oEvent.getSource(),
                     oView = this.getView();
 
                 if (!this._pDialog) {
@@ -74,17 +74,31 @@ sap.ui.define([
                         id: oView.getId(),
                         name: "pro.proj.view.Comment",
                         controller: this
-                    }).then(function (oDialog) {
-                        oDialog.setModel(oView.getModel());
-                        return oDialog;
+                    }).then(function (oFrag) {
+                        oView.addDependent(oFrag);
+                        return oFrag;
                     });
                 }
 
-                this._pDialog.then(function (oDialog) {
-                    oDialog.openBy(oButton);;
-                }.bind(this));
+                this._pDialog.then(function (oFrag) {
+                    oFrag.open();
+                });
 
             },
+            handleOpenDialog: function () {
+
+                if (this._pDialog) {
+                    this._pDialog.close();
+                };
+
+            },
+            handleOpenDialog: function () {
+
+                if (this._pDialog) {
+                    this._pDialog.close();
+                };
+
+            }
 
         });
     });
