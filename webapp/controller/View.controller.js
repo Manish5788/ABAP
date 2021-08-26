@@ -69,18 +69,22 @@ sap.ui.define([
                 var oButton = oEvent.getSource(),
                     oView = this.getView();
 
-                if (!this._pComView) {
-                    this._pComView = Fragment.load({
+                if (!this._pDialog) {
+                    this._pDialog = Fragment.load({
                         id: oView.getId(),
                         name: "pro.proj.view.Comment",
                         controller: this
-                    }).then(function (oCommView) {
-                        oView.addDependent(oCommView);
-                        return oCommView;
+                    }).then(function (oDialog) {
+                        oDialog.setModel(oView.getModel());
+                        return oDialog;
                     });
                 }
-                this._pComView.open();
-            }
+
+                this._pDialog.then(function (oDialog) {
+                    oDialog.open();
+                }.bind(this));
+
+            },
 
         });
     });
