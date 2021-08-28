@@ -7,7 +7,7 @@
 
             <pages>
 
-                <Page id="page" title="ABAP and UI5" enableScrolling="true" class="sapUiResponsivePadding--header sapUiResponsivePadding--footer">
+                <Page id="page" title="ABAP and UI5" showNavButton="true" navButtonPress="goBack" enableScrolling="true" class="sapUiResponsivePadding--header sapUiResponsivePadding--footer">
 
 
                     <MessageStrip text="Default (Information) with default icon and close button: ABAP and UI5" showIcon="true" showCloseButton="true" class="sapUiMediumMarginBottom">

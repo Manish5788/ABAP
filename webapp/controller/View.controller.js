@@ -64,7 +64,7 @@ sap.ui.define([
             onPresstweet: function (evt) {
                 URLHelper.redirect("https://twitter.com/ManishK96274931", true);
             },
-              onPressgit: function (evt) {
+            onPressgit: function (evt) {
                 URLHelper.redirect("https://github.com/Manish5788?tab=repositories", true);
             },
             handleCommentPress: function (oEvent) {
@@ -149,7 +149,19 @@ sap.ui.define([
                 });
 
 
+            },
+
+            onPressAbap: function (oEvent) {
+                this.getOwnerComponent().getRouter().navTo("RouteAbapView", {});
+            },
+            onPressBlogs: function (oEvent) {
+                this.getOwnerComponent().getRouter().navTo("RouteWorkView", {});
+            },
+
+            onPressWork: function (oEvent) {
+                this.getOwnerComponent().getRouter().navTo("RouteBlogsView", {});
             }
+
 
         });
     });

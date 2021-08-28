@@ -1,99 +1,133 @@
 {
-  "_version": "1.32.0",
-  "sap.app": {
-    "id": "pro.proj",
-    "type": "application",
-    "i18n": "i18n/i18n.properties",
-    "applicationVersion": {
-      "version": "1.0.0"
-    },
-    "title": "{{appTitle}}",
-    "description": "{{appDescription}}",
-    "resources": "resources.json",
-    "ach": "ach"
-  },
-  "sap.ui": {
-    "technology": "UI5",
-    "icons": {
-      "icon": "sap-icon://task",
-      "favIcon": "",
-      "phone": "",
-      "phone@2": "",
-      "tablet": "",
-      "tablet@2": ""
-    },
-    "deviceTypes": {
-      "desktop": true,
-      "tablet": true,
-      "phone": true
-    }
-  },
-
-  "sap.ui5": {
-    "flexEnabled": false,
-    "rootView": {
-      "viewName": "pro.proj.view.View",
-      "type": "XML",
-      "async": true,
-      "id": "View"
-    },
-    "dependencies": {
-			"minUI5Version": "1.93.0",
-      "libs": {
-        "sap.ui.core": {},
-        "sap.m": {},
-        "sap.tnt": {},
-        "sap.ui.layout": {}
-      }
-    },
-    "contentDensities": {
-      "compact": true,
-      "cozy": true
-    },
-    "models": {
-      "i18n": {
-        "type": "sap.ui.model.resource.ResourceModel",
-        "settings": {
-          "bundleName": "pro.proj.i18n.i18n"
-        }
-      }
-    },
-    "resources": {
-      "css": [
-        {
-          "uri": "css/style.css"
+    "_version": "1.32.0",
+    "sap.app": {
+        "id": "pro.proj",
+        "type": "application",
+        "i18n": "i18n/i18n.properties",
+        "applicationVersion": {
+            "version": "1.0.0"
         },
-                {
-          "uri": "https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
-        }
-      ]
+        "title": "{{appTitle}}",
+        "description": "{{appDescription}}",
+        "resources": "resources.json",
+        "ach": "ach"
     },
-    "routing": {
-      "config": {
-        "routerClass": "sap.m.routing.Router",
-        "viewType": "XML",
-        "async": true,
-        "viewPath": "pro.proj.view",
-        "controlAggregation": "pages",
-        "controlId": "app",
-        "clearControlAggregation": false
-      },
-      "routes": [
-        {
-          "name": "RouteView",
-          "pattern": "RouteView",
-          "target": ["TargetView"]
+    "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+            "icon": "sap-icon://task",
+            "favIcon": "",
+            "phone": "",
+            "phone@2": "",
+            "tablet": "",
+            "tablet@2": ""
+        },
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
         }
-      ],
-      "targets": {
-        "TargetView": {
-          "viewType": "XML",
-          "transition": "slide",
-          "clearControlAggregation": false,
-          "viewId": "View",
-          "viewName": "View"
+    },
+    "sap.ui5": {
+        "flexEnabled": false,
+        "rootView": {
+            "viewName": "pro.proj.view.View",
+            "type": "XML",
+            "async": true,
+            "id": "View"
+        },
+        "dependencies": {
+            "minUI5Version": "1.93.0",
+            "libs": {
+                "sap.ui.core": {},
+                "sap.m": {},
+                "sap.tnt": {},
+                "sap.ui.layout": {}
+            }
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": {
+                    "bundleName": "pro.proj.i18n.i18n"
+                }
+            }
+        },
+        "resources": {
+            "css": [
+                {
+                    "uri": "css/style.css"
+                },
+                {
+                    "uri": "https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+                }
+            ]
+        },
+        "routing": {
+            "config": {
+                "routerClass": "sap.m.routing.Router",
+                "viewType": "XML",
+                "async": true,
+                "viewPath": "pro.proj.view",
+                "controlAggregation": "pages",
+                "controlId": "app",
+                "clearControlAggregation": false
+            },
+            "routes": [
+                {
+                    "name": "RouteView",
+                    "pattern": "RouteView",
+                    "target": [
+                        "TargetView"
+                    ]
+                },
+                {
+                    "name": "RouteAbapView",
+                    "pattern": "abap",
+                    "target": [
+                        "AbapView"
+                    ]
+                },
+                {
+                    "name": "RouteWorkView",
+                    "pattern": "work",
+                    "target": [
+                        "WorkView"
+                    ]
+                },
+                {
+                    "name": "RouteBlogsView",
+                    "pattern": "blogs",
+                    "target": [
+                        "BlogsView"
+                    ]
+                }
+            ],
+            "targets": {
+                "TargetView": {
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "clearControlAggregation": false,
+                    "viewId": "View1",
+                    "viewName": "View"
+                },
+                "AbapView": {
+                    "viewType": "XML",
+                    "viewName": "abap"
+                },
+                "WorkView": {
+                    "viewType": "XML",
+                    "viewName": "work"
+                },
+                "BlogsView": {
+                    "viewType": "XML",
+                    "viewName": "blog"
+                }
+            }
         }
-      }
     }
-  }
 }

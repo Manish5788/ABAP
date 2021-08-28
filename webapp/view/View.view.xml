@@ -14,17 +14,17 @@
                                 <OverflowToolbarLayoutData priority="NeverOverflow" />
                             </layoutData>
                         </Button>
-                        <Button text="ABAP-UI5 Explored" type="Transparent">
+                        <Button text="ABAP-UI5 Explored" type="Transparent" press="onPressAbap">
                             <layoutData>
                                 <OverflowToolbarLayoutData priority="NeverOverflow" />
                             </layoutData>
                         </Button>
-                        <Button text="Blogs" type="Transparent">
+                        <Button text="Blogs" type="Transparent" press="onPressBlogs" >
                             <layoutData>
                                 <OverflowToolbarLayoutData priority="NeverOverflow" />
                             </layoutData>
                         </Button>
-                        <Button text="My Work" type="Transparent">
+                        <Button text="My Work" type="Transparent" press="onPressWork" >
                             <layoutData>
                                 <OverflowToolbarLayoutData priority="NeverOverflow" />
                             </layoutData>

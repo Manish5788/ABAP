@@ -7,10 +7,11 @@
 
             <pages>
 
-                <Page id="page" title="Project Details" enableScrolling="true" class="sapUiResponsivePadding--header sapUiResponsivePadding--footer">
+                <Page id="page" title="Project Details" showNavButton="true" navButtonPress="goBack" enableScrolling="true" class="sapUiResponsivePadding--header sapUiResponsivePadding--footer">
 
                     <SearchField width="12rem" liveChange=".onSearch"/>
-
+                     <MessageStrip text="Default (Information) with default icon and close button: projects" showIcon="true" showCloseButton="true" class="sapUiMediumMarginBottom">
+                    </MessageStrip>
 
                 </Page>
             </pages>
