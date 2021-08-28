@@ -102,6 +102,41 @@ sap.ui.define([
                     });
                 };
 
+            },
+            onSearch: function (oEvent) {
+                // add filter for search
+                var aFilters = [];
+                var sQuery = oEvent.getSource().getValue();
+                if (sQuery && sQuery.length > 0) {
+                    var filter = new Filter("Name", FilterOperator.Contains, sQuery);
+                    aFilters.push(filter);
+                }
+
+                // update list binding
+                var oList = this.byId("idList");
+                var oBinding = oList.getBinding("items");
+                oBinding.filter(aFilters, "Application");
+            },
+            handleHintPress:function(oEvent){
+                var oButton2 = oEvent.getSource(),
+                    oView = this.getView();
+
+                if (!this._pDialog) {
+                    this._pDialog = Fragment.load({
+                        id: oView.getId(),
+                        name: "pro.proj.view.About",
+                        controller: this
+                    }).then(function (oAbout) {
+                        oView.addDependent(oAbout);
+                        return oAbout;
+                    });
+                }
+
+                this._pDialog.then(function (oAbout) {
+                    oAbout.open();
+                });
+
+
             }
 
         });

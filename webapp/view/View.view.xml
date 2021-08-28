@@ -7,7 +7,7 @@
 
             <pages>
 
-                <Page id="page" title="{i18n>title}" showHeader="false" class="bg-gray-200">
+                <Page id="page" title="{i18n>title}" showHeader="false" enableScrolling="true" class="sapUiResponsivePadding--header sapUiResponsivePadding--footer">
                     <tnt:ToolHeader>
                         <Button icon="sap-icon://home" type="Transparent">
                             <layoutData>
@@ -19,16 +19,18 @@
                                 <OverflowToolbarLayoutData priority="NeverOverflow" shrinkable="true" />
                             </layoutData>
                             <items>
-                                <IconTabFilter text="ABAP-UI5 Explored" />
+                                <IconTabFilter text="ABAP-UI5 Explored"/>
                                 <IconTabFilter text="Blogs" />
                                 <IconTabFilter text="My Work" />
                             </items>
                         </IconTabHeader>
-                        <Button icon="sap-icon://search" type="Transparent">
+                        <SearchField width="12rem" liveChange=".onSearch"/>
+
+                        <!-- <Button icon="sap-icon://search" type="Transparent">
                             <layoutData>
                                 <OverflowToolbarLayoutData priority="NeverOverflow" />
                             </layoutData>
-                        </Button>
+                        </Button> -->
                         <Button icon="sap-icon://comment" type="Transparent" press="handleCommentPress">
                             <layoutData>
                                 <OverflowToolbarLayoutData priority="NeverOverflow" />
@@ -43,13 +45,20 @@
                     </tnt:ToolHeader>
                     <content>
 
+                        <FlexBox height="100px" alignItems="Start" justifyContent="Center">
+                            <!-- <Carousel class="sapUiContentPadding" loop="true"> -->
 
-                        <!-- <FlexBox height="50px" alignItems="Start" justifyContent="Center"> -->
-                        <Carousel class="sapUiContentPadding">
-                            <Image src="model/abap.png" class="sapUiTinyMarginTop sapUiLargeMarginBottom" alt="Example picture of USB flash drive" />
+                            <Image src="model/abap.png" class="sapUiLargeMarginTop sapUiLargeMarginBottom" alt="Example picture of USB flash drive" />
+
+                            <!-- </Carousel> -->
+
+                        </FlexBox>
+
+                        <!-- <Carousel class="sapUiContentPadding">
+                            <Image src="model/abap.png" class="sapUiLargeMarginBottom" alt="Example picture of USB flash drive" />
                             <Image src="https://images.freeimages.com/images/large-previews/3d7/road-sign-1144301.jpg" class="sapUiTinyMarginTop sapUiLargeMarginBottom" alt="Example picture of spotlight" />
-                        </Carousel>
-                        <!-- </FlexBox> -->
+                        </Carousel> -->
+
 
                     </content>
                     <footer>

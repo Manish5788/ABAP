@@ -1,0 +1,27 @@
+<core:FragmentDefinition xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+    xmlns:mvc="sap.ui.core.mvc">
+    <Dialog title="About">
+
+        <l:VerticalLayout class="sapUiContentPadding" width="100%">
+            <Image src="model/ui5.png" class="sapUiResponsiveMargin sapUiLargeMarginBottom sapUiMediumMarginEnd" alt="UI5 Picture" />
+            <Title level="H1" text="Manish Kumar Rajak" />
+            <Text text="© Copyright 2021 Manish Kumar Rajak. All rights reserved."/>
+
+            <Label text="This software includes third-party open source software." required="true" />
+            <Title level="H3" text="Version 1.00.0" />
+            <Label text="This software includes the Latest UI5 library versions" />
+
+            <MessageStrip text="This App is made for Learning purpose only" class="sapUiTinyMarginTopBottom sapUiMediumMarginEnd" showIcon="true" >
+            </MessageStrip>
+
+        </l:VerticalLayout>
+        <FlexBox height="100px" alignItems="Start" justifyContent="End">
+            <Button text="Close" type="Reject" class="sapUiTinyMarginTopBottom sapUiMediumMarginEnd" press="handleCloseDialog" />
+        </FlexBox>
+
+
+    </Dialog>
+
+</core:FragmentDefinition>

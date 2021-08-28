@@ -62,6 +62,9 @@
       "css": [
         {
           "uri": "css/style.css"
+        },
+                {
+          "uri": "https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
         }
       ]
     },
