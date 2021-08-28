@@ -20,11 +20,15 @@
 		"int-tests": "fiori run --open test/integration/opaTests.qunit.html"
 	},
 	"devDependencies": {
+		"@sap/ux-ui5-tooling": "1",
 		"@ui5/cli": "^2.11.1",
 		"@ui5/fs": "^2.0.6",
 		"@ui5/logger": "^2.0.1",
-		"@sap/ux-ui5-tooling": "1",
-		"rimraf": "3.0.2"
+		"autoprefixer": "^10.3.3",
+		"postcss": "^8.3.6",
+		"rimraf": "3.0.2",
+		"tailwindcss": "^2.2.8",
+		"vite": "^2.5.1"
 	},
 	"ui5": {
 		"dependencies": [

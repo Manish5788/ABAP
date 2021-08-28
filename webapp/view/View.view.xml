@@ -7,7 +7,7 @@
 
             <pages>
 
-                <Page id="page" title="{i18n>title}" showHeader="false">
+                <Page id="page" title="{i18n>title}" showHeader="false" class="bg-gray-200">
                     <tnt:ToolHeader>
                         <Button icon="sap-icon://home" type="Transparent">
                             <layoutData>
@@ -34,7 +34,7 @@
                                 <OverflowToolbarLayoutData priority="NeverOverflow" />
                             </layoutData>
                         </Button>
-                           <Button icon="sap-icon://hint" type="Transparent" press="handleHintPress">
+                        <Button icon="sap-icon://hint" type="Transparent" press="handleHintPress">
                             <layoutData>
                                 <OverflowToolbarLayoutData priority="NeverOverflow" />
                             </layoutData>
@@ -42,6 +42,8 @@
 
                     </tnt:ToolHeader>
                     <content>
+
+
                         <!-- <FlexBox height="50px" alignItems="Start" justifyContent="Center"> -->
                         <Carousel class="sapUiContentPadding">
                             <Image src="model/abap.png" class="sapUiTinyMarginTop sapUiLargeMarginBottom" alt="Example picture of USB flash drive" />
@@ -54,7 +56,7 @@
                         <Toolbar>
                             <ToolbarSpacer/>
                             <!-- Icons made by <a href="https://www.freepik.com -->
-                            <Button icon="model/linkedin.png" type="Transparent"  press="handleUrlPress" ariaLabelledBy="editButtonLabel"/>
+                            <Button icon="model/linkedin.png" type="Transparent" press="handleUrlPress" ariaLabelledBy="editButtonLabel"/>
                             <Button id="employeeQuickView" text="Contact Me" press=".handleQuickViewPress" icon="sap-icon://action" />
                             <Button icon="model/twitter.png" type="Transparent" press="onPresstweet" ariaLabelledBy="editButtonLabel"/>
 
