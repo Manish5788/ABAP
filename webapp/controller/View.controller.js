@@ -155,11 +155,11 @@ sap.ui.define([
                 this.getOwnerComponent().getRouter().navTo("RouteAbapView", {});
             },
             onPressBlogs: function (oEvent) {
-                this.getOwnerComponent().getRouter().navTo("RouteWorkView", {});
+                this.getOwnerComponent().getRouter().navTo("RouteBlogsView", {});
             },
 
             onPressWork: function (oEvent) {
-                this.getOwnerComponent().getRouter().navTo("RouteBlogsView", {});
+                this.getOwnerComponent().getRouter().navTo("RouteWorkView", {});
             }
 
 

@@ -9,9 +9,15 @@
 
                 <Page id="page" title="ABAP and UI5" showNavButton="true" navButtonPress="goBack" enableScrolling="true" class="sapUiResponsivePadding--header sapUiResponsivePadding--footer">
 
+                    <FlexBox height="100px" alignItems="Start" justifyContent="Center">
+                        <!-- <Carousel class="sapUiContentPadding" loop="true"> -->
 
-                    <MessageStrip text="Default (Information) with default icon and close button: ABAP and UI5" showIcon="true" showCloseButton="true" class="sapUiMediumMarginBottom">
-                    </MessageStrip>
+                        <Image src="model/abappic.jpg" class="sapUiLargeMarginTop sapUiLargeMarginBottom" alt="Example picture of USB flash drive" />
+
+                        <!-- </Carousel> -->
+
+                    </FlexBox>
+                
 
                 </Page>
             </pages>

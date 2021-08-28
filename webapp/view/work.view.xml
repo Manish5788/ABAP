@@ -8,10 +8,15 @@
             <pages>
 
                 <Page id="page" title="Project Details" showNavButton="true" navButtonPress="goBack" enableScrolling="true" class="sapUiResponsivePadding--header sapUiResponsivePadding--footer">
+                    <FlexBox height="100px" alignItems="Start" justifyContent="Center">
+                        <!-- <Carousel class="sapUiContentPadding" loop="true"> -->
 
-                    <SearchField width="12rem" liveChange=".onSearch"/>
-                     <MessageStrip text="Default (Information) with default icon and close button: projects" showIcon="true" showCloseButton="true" class="sapUiMediumMarginBottom">
-                    </MessageStrip>
+                        <Image src="model/proj.png" class="sapUiLargeMarginTop sapUiLargeMarginBottom" alt="Example picture of USB flash drive" />
+
+                        <!-- </Carousel> -->
+
+                    </FlexBox>
+
 
                 </Page>
             </pages>
