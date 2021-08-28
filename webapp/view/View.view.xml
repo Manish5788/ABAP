@@ -14,23 +14,25 @@
                                 <OverflowToolbarLayoutData priority="NeverOverflow" />
                             </layoutData>
                         </Button>
-                        <IconTabHeader id="iconTabHeader" selectedKey="invalidKey" backgroundDesign="Transparent" mode="Inline">
-                            <layoutData>
-                                <OverflowToolbarLayoutData priority="NeverOverflow" shrinkable="true" />
-                            </layoutData>
-                            <items>
-                                <IconTabFilter text="ABAP-UI5 Explored"/>
-                                <IconTabFilter text="Blogs" />
-                                <IconTabFilter text="My Work" />
-                            </items>
-                        </IconTabHeader>
-                        <SearchField width="12rem" liveChange=".onSearch"/>
-
-                        <!-- <Button icon="sap-icon://search" type="Transparent">
+                        <Button text="ABAP-UI5 Explored" type="Transparent">
                             <layoutData>
                                 <OverflowToolbarLayoutData priority="NeverOverflow" />
                             </layoutData>
-                        </Button> -->
+                        </Button>
+                        <Button text="Blogs" type="Transparent">
+                            <layoutData>
+                                <OverflowToolbarLayoutData priority="NeverOverflow" />
+                            </layoutData>
+                        </Button>
+                        <Button text="My Work" type="Transparent">
+                            <layoutData>
+                                <OverflowToolbarLayoutData priority="NeverOverflow" />
+                            </layoutData>
+                        </Button>
+                        <ToolbarSpacer/>
+
+                        <SearchField width="12rem" liveChange=".onSearch"/>
+
                         <Button icon="sap-icon://comment" type="Transparent" press="handleCommentPress">
                             <layoutData>
                                 <OverflowToolbarLayoutData priority="NeverOverflow" />
@@ -48,7 +50,7 @@
                         <FlexBox height="100px" alignItems="Start" justifyContent="Center">
                             <!-- <Carousel class="sapUiContentPadding" loop="true"> -->
 
-                            <Image src="model/abap.png" class="sapUiLargeMarginTop sapUiLargeMarginBottom" alt="Example picture of USB flash drive" />
+                            <Image src="model/abap.jpg" class="sapUiLargeMarginTop sapUiLargeMarginBottom" alt="Example picture of USB flash drive" />
 
                             <!-- </Carousel> -->
 
@@ -64,12 +66,13 @@
                     <footer>
                         <Toolbar>
                             <ToolbarSpacer/>
-                            <!-- Icons made by <a href="https://www.freepik.com -->
-                            <Button icon="model/linkedin.png" type="Transparent" press="handleUrlPress" ariaLabelledBy="editButtonLabel"/>
+                            <!-- Icons made by <a href="https://www.freepik.com  -->
                             <Button id="employeeQuickView" text="Contact Me" press=".handleQuickViewPress" icon="sap-icon://action" />
-                            <Button icon="model/twitter.png" type="Transparent" press="onPresstweet" ariaLabelledBy="editButtonLabel"/>
 
                             <ToolbarSpacer/>
+                            <Button icon="model/linkedin.png" type="Transparent" press="handleUrlPress" ariaLabelledBy="editButtonLabel"/>
+                            <Button icon="model/twitter.png" type="Transparent" press="onPresstweet" ariaLabelledBy="editButtonLabel"/>
+                            <Button icon="model/github.png" type="Transparent" press="onPressgit" ariaLabelledBy="editButtonLabel"/>
                         </Toolbar>
                     </footer>
                 </Page>

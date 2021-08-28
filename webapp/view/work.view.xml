@@ -1,0 +1,19 @@
+<mvc:View controllerName="pro.proj.controller.work"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:tnt="sap.tnt">
+    <Shell id="shell">
+        <App id="app">
+
+            <pages>
+
+                <Page id="page" title="Project Details" enableScrolling="true" class="sapUiResponsivePadding--header sapUiResponsivePadding--footer">
+
+                    <SearchField width="12rem" liveChange=".onSearch"/>
+
+
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

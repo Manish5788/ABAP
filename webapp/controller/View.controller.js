@@ -64,6 +64,9 @@ sap.ui.define([
             onPresstweet: function (evt) {
                 URLHelper.redirect("https://twitter.com/ManishK96274931", true);
             },
+              onPressgit: function (evt) {
+                URLHelper.redirect("https://github.com/Manish5788?tab=repositories", true);
+            },
             handleCommentPress: function (oEvent) {
 
                 var oButton1 = oEvent.getSource(),
