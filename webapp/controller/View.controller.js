@@ -103,6 +103,15 @@ sap.ui.define([
                 };
 
             },
+            handleCloseHint: function () {
+
+                if (this._pDialog1) {
+                    this._pDialog1.then(function (oAbout) {
+                        oAbout.close();
+                    });
+                };
+
+            },
             onSearch: function (oEvent) {
                 // add filter for search
                 var aFilters = [];
@@ -117,12 +126,12 @@ sap.ui.define([
                 var oBinding = oList.getBinding("items");
                 oBinding.filter(aFilters, "Application");
             },
-            handleHintPress:function(oEvent){
+            handleHintPress: function (oEvent) {
                 var oButton2 = oEvent.getSource(),
                     oView = this.getView();
 
-                if (!this._pDialog) {
-                    this._pDialog = Fragment.load({
+                if (!this._pDialog1) {
+                    this._pDialog1 = Fragment.load({
                         id: oView.getId(),
                         name: "pro.proj.view.About",
                         controller: this
@@ -132,7 +141,7 @@ sap.ui.define([
                     });
                 }
 
-                this._pDialog.then(function (oAbout) {
+                this._pDialog1.then(function (oAbout) {
                     oAbout.open();
                 });
 

@@ -18,7 +18,7 @@
 
         </l:VerticalLayout>
         <FlexBox height="100px" alignItems="Start" justifyContent="End">
-            <Button text="Close" type="Reject" class="sapUiTinyMarginTopBottom sapUiMediumMarginEnd" press="handleCloseDialog" />
+            <Button text="Close" type="Reject" class="sapUiTinyMarginTopBottom sapUiMediumMarginEnd" press="handleCloseHint" />
         </FlexBox>
 
 
