@@ -5,7 +5,7 @@
     <Dialog title="About" contentWidth="450px">
 
         <l:VerticalLayout class="sapUiContentPadding" width="100%">
-            <Image src="model/logo_trans1.png" height="200px" width="200px" class="image" alt="UI5 Picture" />
+            <Image src="model/logo_trans1.png" height="200px" width="200px" class="sapUiResponsiveMargin image" alt="UI5 Picture" />
             <Title level="H2" text="Manish Kumar Rajak" />
             <Text text="© Copyright 2021 Manish Kumar Rajak. All rights reserved."/>
 
