@@ -9,7 +9,7 @@
 
                 <Page id="page" title="{i18n>title}" showHeader="false" enableScrolling="true" class="sapUiResponsivePadding--header sapUiResponsivePadding--footer">
                     <tnt:ToolHeader>
-                        <Button icon="model/logo_trans1.png" type="Transparent">
+                        <Button icon="model/logo_tra.png" type="Transparent">
                             <layoutData>
                                 <OverflowToolbarLayoutData priority="NeverOverflow" />
                             </layoutData>
