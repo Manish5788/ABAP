@@ -26,6 +26,14 @@ sap.ui.define([
 
 
             },
+            onHomePress: function () {
+                var oIconTabHeader = this.byId('iconTabHeader');
+                oIconTabHeader.setSelectedKey('invalidKey');
+
+                var oLabel = this.byId('labelId');
+                oLabel.setText('Home Screen');
+            },
+
 
             handlePopoverPress: function (oEvent) {
                 MessageBox.information("Execute Order 66");
@@ -160,6 +168,28 @@ sap.ui.define([
 
             onPressWork: function (oEvent) {
                 this.getOwnerComponent().getRouter().navTo("RouteWorkView", {});
+            },
+
+            onSelectTab: function (event) {
+                var oLabel = this.byId('labelId');
+                var oTab = event.getParameter('item');
+
+                if (oTab.getText() === "ABAP-UI5 Explored") {
+                    this.onPressAbap();
+                } else if (oTab.getText() === "Blogs") {
+                    this.onPressBlogs();
+
+                } else if (oTab.getText() === "My Work") {
+
+                    this.onPressWork();
+
+                } else {
+
+                    this.getOwnerComponent().getRouter().navTo("RouteView", {}, true /*no history*/);
+
+
+                }
+
             }
 
 

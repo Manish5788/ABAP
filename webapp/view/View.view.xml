@@ -1,6 +1,7 @@
 <mvc:View controllerName="pro.proj.controller.View"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m"
+    xmlns:core="sap.ui.core"
     xmlns:tnt="sap.tnt">
     <Shell id="shell">
         <App id="app">
@@ -9,27 +10,39 @@
 
                 <Page id="page" title="{i18n>title}" showHeader="false" enableScrolling="true" class="sapUiResponsivePadding--header sapUiResponsivePadding--footer">
                     <tnt:ToolHeader>
-                        <Button icon="model/logo_tra.png" type="Transparent">
+                        <Button icon="model/logo_tra.png" type="Transparent" press=".onHomePress">
                             <layoutData>
                                 <OverflowToolbarLayoutData priority="NeverOverflow" />
                             </layoutData>
                         </Button>
-                        <Button text="ABAP-UI5 Explored" type="Transparent" press="onPressAbap">
+
+                        <IconTabHeader id="iconTabHeader" selectedKey="invalidKey" select=".onSelectTab" backgroundDesign="Transparent" mode="Inline">
+                            <layoutData>
+                                <OverflowToolbarLayoutData priority="NeverOverflow" shrinkable="true" />
+                            </layoutData>
+                            <items>
+                                <IconTabFilter text="ABAP-UI5 Explored" />
+                                <IconTabFilter text="Blogs" />
+                                <IconTabFilter text="My Work" />
+                            </items>
+                        </IconTabHeader>
+
+                        <!-- <Button text="ABAP-UI5 Explored" type="Transparent" press="onPressAbap">
                             <layoutData>
                                 <OverflowToolbarLayoutData priority="NeverOverflow" />
                             </layoutData>
                         </Button>
-                        <Button text="Blogs" type="Transparent" press="onPressBlogs" >
+                        <Button text="Blogs" type="Transparent" press="onPressBlogs">
                             <layoutData>
                                 <OverflowToolbarLayoutData priority="NeverOverflow" />
                             </layoutData>
                         </Button>
-                        <Button text="My Work" type="Transparent" press="onPressWork" >
+                        <Button text="My Work" type="Transparent" press="onPressWork">
                             <layoutData>
                                 <OverflowToolbarLayoutData priority="NeverOverflow" />
                             </layoutData>
                         </Button>
-                        <ToolbarSpacer/>
+                        <ToolbarSpacer/> -->
 
                         <SearchField width="12rem" liveChange=".onSearch"/>
 
@@ -38,6 +51,12 @@
                                 <OverflowToolbarLayoutData priority="NeverOverflow" />
                             </layoutData>
                         </Button>
+                        <core:Icon src="model/u5.png" >
+                            <core:layoutData>
+                                <FlexItemData growFactor="1" />
+                            </core:layoutData>
+                        </core:Icon>
+
                         <Button icon="sap-icon://hint" type="Transparent" press="handleHintPress">
                             <layoutData>
                                 <OverflowToolbarLayoutData priority="NeverOverflow" />
