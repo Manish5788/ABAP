@@ -1,6 +1,6 @@
 .image {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   margin-right: 160px;
   margin-left: 80px;
   animation: shake .9s infinite /* shorthand animation property */

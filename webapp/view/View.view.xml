@@ -58,14 +58,15 @@
                     </content>
                     <footer>
                         <Toolbar>
+                            <!-- <Text text="© Copyright 2021 Manish " /> -->
                             <ToolbarSpacer/>
                             <!-- Icons made by <a href="https://www.freepik.com  -->
                             <Button id="employeeQuickView" text="Contact Me" press=".handleQuickViewPress" icon="sap-icon://action" />
 
                             <ToolbarSpacer/>
-                            <Button icon="model/linkedin.png" type="Transparent" press="handleUrlPress" ariaLabelledBy="editButtonLabel"/>
+                            <!-- <Button icon="model/linkedin.png" type="Transparent" press="handleUrlPress" ariaLabelledBy="editButtonLabel"/>
                             <Button icon="model/twitter.png" type="Transparent" press="onPresstweet" ariaLabelledBy="editButtonLabel"/>
-                            <Button icon="model/github.png" type="Transparent" press="onPressgit" ariaLabelledBy="editButtonLabel"/>
+                            <Button icon="model/github.png" type="Transparent" press="onPressgit" ariaLabelledBy="editButtonLabel"/> -->
                         </Toolbar>
                     </footer>
                 </Page>

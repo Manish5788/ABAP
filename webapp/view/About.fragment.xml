@@ -13,7 +13,10 @@
 
         </l:VerticalLayout>
         <FlexBox height="50px" alignItems="Center" justifyContent="Center">
-            <Button text="Close" type="Accept"  press="handleCloseHint" />
+            <Button text="Close" type="Accept"  press="handleCloseHint" class="sapUiLargeMarginEnd"/>
+            <Button icon="model/linkedin.png" type="Transparent" press="handleUrlPress"/>
+            <Button icon="model/twitter.png" type="Transparent" press="onPresstweet" />
+            <Button icon="model/github.png" type="Transparent" press="onPressgit" />
         </FlexBox>
 
 
