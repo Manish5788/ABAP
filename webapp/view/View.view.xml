@@ -27,7 +27,6 @@
                             </items>
                         </IconTabHeader>
 
-                        <SearchField width="12rem" liveChange=".onSearch"/>
 
                         <Button icon="sap-icon://comment" type="Transparent" press="handleCommentPress">
                             <layoutData>

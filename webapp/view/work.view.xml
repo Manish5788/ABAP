@@ -8,13 +8,11 @@
             <pages>
 
                 <Page id="page" title="Project Details" showNavButton="true" navButtonPress="goBack" enableScrolling="true" class="sapUiResponsivePadding--header sapUiResponsivePadding--footer">
+                     <headerContent>
+                        <SearchField width="12rem" liveChange=".onSearch"/>
+                    </headerContent>
                     <FlexBox height="100px" alignItems="Start" justifyContent="Center">
-                        <!-- <Carousel class="sapUiContentPadding" loop="true"> -->
-
                         <Image src="model/proj.png" class="sapUiLargeMarginTop sapUiLargeMarginBottom" alt="Example picture of USB flash drive" />
-
-                        <!-- </Carousel> -->
-
                     </FlexBox>
 
 
