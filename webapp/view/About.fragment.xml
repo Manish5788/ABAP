@@ -8,10 +8,8 @@
             <Image src="model/logo_trans1.png" height="200px" width="200px" class="image" alt="UI5 Picture" />
             <Title level="H2" text="Manish Kumar Rajak" />
             <Text text="© Copyright 2021 Manish Kumar Rajak. All rights reserved."/>
-
-            <Label text="This software includes third-party open source software." required="true" />
             <Title level="H3" text="Version 1.00.0" />
-            <Label text="This software includes the Latest UI5 library versions" />
+            <Text text="This software includes the Latest UI5 library versions" />
 
         </l:VerticalLayout>
         <FlexBox height="50px" alignItems="Center" justifyContent="Center">

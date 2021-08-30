@@ -27,23 +27,6 @@
                             </items>
                         </IconTabHeader>
 
-                        <!-- <Button text="ABAP-UI5 Explored" type="Transparent" press="onPressAbap">
-                            <layoutData>
-                                <OverflowToolbarLayoutData priority="NeverOverflow" />
-                            </layoutData>
-                        </Button>
-                        <Button text="Blogs" type="Transparent" press="onPressBlogs">
-                            <layoutData>
-                                <OverflowToolbarLayoutData priority="NeverOverflow" />
-                            </layoutData>
-                        </Button>
-                        <Button text="My Work" type="Transparent" press="onPressWork">
-                            <layoutData>
-                                <OverflowToolbarLayoutData priority="NeverOverflow" />
-                            </layoutData>
-                        </Button>
-                        <ToolbarSpacer/> -->
-
                         <SearchField width="12rem" liveChange=".onSearch"/>
 
                         <Button icon="sap-icon://comment" type="Transparent" press="handleCommentPress">
@@ -51,11 +34,6 @@
                                 <OverflowToolbarLayoutData priority="NeverOverflow" />
                             </layoutData>
                         </Button>
-                        <core:Icon src="model/u5.png" >
-                            <core:layoutData>
-                                <FlexItemData growFactor="1" />
-                            </core:layoutData>
-                        </core:Icon>
 
                         <Button icon="sap-icon://hint" type="Transparent" press="handleHintPress">
                             <layoutData>
@@ -67,11 +45,7 @@
                     <content>
 
                         <FlexBox height="100px" alignItems="Start" justifyContent="Center">
-                            <!-- <Carousel class="sapUiContentPadding" loop="true"> -->
-
                             <Image src="model/abap.jpg" class="sapUiLargeMarginTop sapUiLargeMarginBottom" alt="Example picture of USB flash drive" />
-
-                            <!-- </Carousel> -->
 
                         </FlexBox>
 
