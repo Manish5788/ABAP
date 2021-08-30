@@ -21,9 +21,9 @@
                                 <OverflowToolbarLayoutData priority="NeverOverflow" shrinkable="true" />
                             </layoutData>
                             <items>
-                                <IconTabFilter text="ABAP-UI5 Explored" />
+                                <!-- <IconTabFilter text="ABAP-UI5 Explored" /> -->
                                 <IconTabFilter text="Blogs" />
-                                <IconTabFilter text="My Work" />
+                                <IconTabFilter text="Work" />
                             </items>
                         </IconTabHeader>
 

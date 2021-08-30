@@ -31,7 +31,7 @@ sap.ui.define([
                 oIconTabHeader.setSelectedKey('invalidKey');
 
                 var oLabel = this.byId('labelId');
-                oLabel.setText('Home Screen');
+                // oLabel.setText('Home Screen');
             },
 
 
@@ -179,7 +179,7 @@ sap.ui.define([
                 } else if (oTab.getText() === "Blogs") {
                     this.onPressBlogs();
 
-                } else if (oTab.getText() === "My Work") {
+                } else if (oTab.getText() === "Work") {
 
                     this.onPressWork();
 
