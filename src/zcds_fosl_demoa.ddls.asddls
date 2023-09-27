@@ -22,7 +22,7 @@ define view ZCDS_FOSL_DEMOA as select from /dmo/flight
           when 'EUR' then 'EURO'
           else 'NO IDEA'
     end as CurrencyType,
-    coalesce(currency_code, connection_id) as wdesc,
+
     plane_type_id as PlaneTypeId,
     seats_max as SeatsMax,
     seats_occupied as SeatsOccupied,
