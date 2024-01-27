@@ -19,7 +19,9 @@ sap.ui.define([
             },
             _onRouteMatched: function(oEvent) {
                 // var oSelectedItem = oEvent.getSource();
+                
 			    // //var oContext = oSelectedItem.getBindingContext("order");
+
 			    // var sPath = oContext.getPath();
                 this._orderId = oEvent.getParameter("arguments").orderId;
                 this.getView().bindElement({path: "/orders/" + this._orderId , model: "myModel"});
