@@ -1,0 +1,40 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    controllerName="project1.controller.View1"
+    displayBlock="true"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <content>
+
+            <List
+                id="orders"
+                items="{order>/orders}"
+                mode="SingleSelectMaster"
+                selectionChange="onSelectionChange"
+            >
+                <items>
+                    <ObjectListItem
+                        id="_IDGenObjectListItem1"
+                        intro="{order>orderId}"
+                        title="{order>orderName}"
+                        number="{order>GrossAmount}"
+                        numberUnit="EUR"
+                        type="Navigation"
+                        press="onSelectionChange"
+                    >
+                        <attributes>
+                            <ObjectAttribute
+                                id="_IDGenObjectAttribute1"
+                                text="{order>BuyerName}"
+                            />
+                        </attributes>
+                    </ObjectListItem>
+                </items>
+            </List>
+        </content>
+    </Page>
+</mvc:View>
